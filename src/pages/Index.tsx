@@ -1,13 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import CalloutSection from "@/components/CalloutSection";
+import IssueSection from "@/components/IssueSection";
+import MissionSection from "@/components/MissionSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Sincerely, People With Periods | Fighting Period Poverty</title>
+        <meta
+          name="description"
+          content="A student-led nonprofit fighting period poverty through education, advocacy, and community action in Richmond, Virginia."
+        />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <HeroSection />
+          <CalloutSection />
+          <IssueSection />
+          <MissionSection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
