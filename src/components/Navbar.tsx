@@ -40,15 +40,15 @@ const Navbar = () => {
 
   return (
     <header className="bg-secondary shadow-sm sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link to="/" className="font-serif-italic text-lg lg:text-xl font-bold text-primary whitespace-nowrap">
+      <nav className="w-full px-4 lg:px-8">
+        <div className="flex items-center h-16 lg:h-20">
+          {/* Logo - absolute left */}
+          <Link to="/" className="font-serif-italic text-lg lg:text-xl font-bold text-primary whitespace-nowrap mr-auto">
             Sincerely, People With Periods
           </Link>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - centered */}
+          <ul className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item) => (
               <li key={item.label} className="relative group">
                 <button className="flex items-center gap-1 text-primary font-medium hover:text-primary/80 transition-colors py-2">
@@ -75,8 +75,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Donate Button */}
-          <Button className="hidden lg:inline-flex" size="lg">
+          {/* Donate Button - right side */}
+          <Button className="hidden lg:inline-flex ml-auto" size="lg">
             Donate
           </Button>
 
