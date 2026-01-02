@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 import aarushiKhanna from "@/assets/team/aarushi-khanna.jpg";
+import widadKhan from "@/assets/team/widad-khan.jpg";
 
 interface TeamMember {
   name: string;
@@ -13,7 +14,7 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   { name: "Aarushi Khanna", role: "Founder + Executive Director", image: aarushiKhanna },
-  { name: "Team Member 2", role: "Role Title", image: "" },
+  { name: "Widad M. Khan", role: "Social Media Manager", image: widadKhan },
   { name: "Team Member 3", role: "Role Title", image: "" },
   { name: "Team Member 4", role: "Role Title", image: "" },
   { name: "Team Member 5", role: "Role Title", image: "" },
