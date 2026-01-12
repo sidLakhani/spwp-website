@@ -14,7 +14,7 @@ const navItems = [
   {
     label: "Resources",
     items: [
-      { label: "Guides", href: "/guides" },
+      { label: "Our Resources", href: "/our-resources" },
       { label: "FAQs", href: "/faqs" },
     ],
   },
