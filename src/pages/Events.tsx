@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 // 3. Replace the CALENDAR_ID below with your calendar ID
 // 4. Make sure your calendar is set to "Public" in sharing settings
 
-const CALENDAR_ID = "en.usa%23holiday%40group.v.calendar.google.com"; // Replace with your calendar ID
+const CALENDAR_ID = "spwperiods%40gmail.com";
 
 const Events = () => {
   const calendarSrc = `https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=America%2FNew_York&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0`;
