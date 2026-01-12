@@ -48,7 +48,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-3">Connect With Us</h4>
             <div className="flex justify-center md:justify-start gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/sincerelypeoplewithperiods"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="Instagram"
               >
