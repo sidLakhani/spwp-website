@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Users, Calendar, Heart } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const callouts = [
   {
@@ -31,18 +32,18 @@ const CalloutSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
           {callouts.map((callout, index) => (
-            <Link
-              key={callout.title}
-              to={callout.href}
-              className={`${callout.bgClass} p-6 lg:p-8 rounded-xl text-center hover:scale-[1.02] transition-transform duration-300 group animate-fade-in-up`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <callout.icon className="w-10 h-10 mx-auto mb-4 text-primary group-hover:scale-110 transition-transform" />
-              <h2 className="text-xl lg:text-2xl font-serif font-bold text-foreground mb-2">
-                {callout.title}
-              </h2>
-              <p className="text-muted-foreground">{callout.description}</p>
-            </Link>
+            <ScrollReveal key={callout.title} variant="fade-up" delay={index * 100}>
+              <Link
+                to={callout.href}
+                className={`${callout.bgClass} block p-6 lg:p-8 rounded-xl text-center hover:scale-[1.02] transition-transform duration-300 group`}
+              >
+                <callout.icon className="w-10 h-10 mx-auto mb-4 text-primary group-hover:scale-110 transition-transform" />
+                <h2 className="text-xl lg:text-2xl font-serif font-bold text-foreground mb-2">
+                  {callout.title}
+                </h2>
+                <p className="text-muted-foreground">{callout.description}</p>
+              </Link>
+            </ScrollReveal>
           ))}
         </div>
       </div>
