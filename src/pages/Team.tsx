@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 import aarushiKhanna from "@/assets/team/aarushi-khanna.jpg";
@@ -81,12 +82,14 @@ const Team = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-secondary to-background py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
-              Meet Our Team
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The passionate individuals dedicated to ending period poverty and creating lasting change in our communities.
-            </p>
+            <ScrollReveal variant="fade-up">
+              <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
+                Meet Our Team
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                The passionate individuals dedicated to ending period poverty and creating lasting change in our communities.
+              </p>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -95,7 +98,9 @@ const Team = () => {
           <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
               {teamMembers.map((member, index) => (
-                <TeamMemberCard key={index} member={member} />
+                <ScrollReveal key={index} variant="fade-up" delay={index * 100}>
+                  <TeamMemberCard member={member} />
+                </ScrollReveal>
               ))}
             </div>
           </div>
