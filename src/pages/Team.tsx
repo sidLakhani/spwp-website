@@ -33,7 +33,7 @@ const TeamMemberCard = ({ member }: { member: TeamMember }) => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 ${member.name === "Naisha" ? "object-[center_70%]" : ""}`}
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20">
