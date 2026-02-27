@@ -1,4 +1,5 @@
 import spwpExtended from "@/assets/spwp-extended.png";
+import spwpExtendedMobile from "@/assets/spwp-extended-mobile.png";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const MissionSection = () => {
@@ -31,7 +32,7 @@ const MissionSection = () => {
         {/* Mobile/Tablet: stack text below image */}
         <div className="lg:hidden">
           <img
-            src={spwpExtended}
+            src={spwpExtendedMobile}
             alt="Sincerely, People With Periods illustration"
             className="w-full h-auto block"
           />
