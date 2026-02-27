@@ -18,7 +18,7 @@ const MissionSection = () => {
               <h2 className="font-serif text-5xl xl:text-6xl font-bold text-foreground uppercase tracking-wide whitespace-nowrap">
                 Our Mission
               </h2>
-              <p className="mt-6 xl:mt-8 text-foreground/90 leading-snug text-lg xl:text-xl">
+              <p className="mt-6 xl:mt-8 text-foreground/90 leading-snug text-[21px] xl:text-[23px]">
                 At Sincerely, People with Periods, we are committed to breaking the stigma surrounding
                 menstruation by expanding menstrual health education and addressing period poverty in schools,
                 organizations, and communities. As a student-led initiative based in Richmond, Virginia,
@@ -40,7 +40,7 @@ const MissionSection = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground uppercase tracking-wide mb-4">
               Our Mission
             </h2>
-            <p className="text-foreground/90 leading-relaxed text-base md:text-lg">
+            <p className="text-foreground/90 leading-relaxed text-[19px] md:text-[21px]">
               At Sincerely, People with Periods, we are committed to breaking the stigma surrounding
               menstruation by expanding menstrual health education and addressing period poverty in schools,
               organizations, and communities. As a student-led initiative based in Richmond, Virginia,
