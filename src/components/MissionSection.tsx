@@ -14,11 +14,11 @@ const MissionSection = () => {
             className="w-full h-auto block"
           />
           <div className="absolute inset-0 flex items-start pt-[51px]">
-            <div className="max-w-lg px-16">
-              <h2 className="font-serif text-6xl font-bold text-foreground uppercase tracking-wide">
+            <div className="w-[40%] px-16">
+              <h2 className="font-serif text-5xl xl:text-6xl font-bold text-foreground uppercase tracking-wide">
                 Our Mission
               </h2>
-              <p className="mt-16 text-foreground/90 leading-relaxed text-xl">
+              <p className="mt-10 xl:mt-16 text-foreground/90 leading-relaxed text-base xl:text-lg">
                 At Sincerely, People with Periods, we are committed to breaking the stigma surrounding
                 menstruation by expanding menstrual health education and addressing period poverty in schools,
                 organizations, and communities. As a student-led initiative based in Richmond, Virginia,
