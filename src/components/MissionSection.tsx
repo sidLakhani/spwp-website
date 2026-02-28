@@ -14,7 +14,7 @@ const MissionSection = () => {
             className="w-full h-auto block"
           />
           <div className="absolute inset-0 flex items-start pt-[5%]">
-            <div className="w-[45%] pl-[4%] pr-[2%]">
+            <div className="w-[40%] pl-[4%] pr-[2%]">
               <h2 className="font-serif text-[clamp(2.5rem,4vw,3.75rem)] font-bold text-foreground uppercase tracking-wide">
                 Our Mission
               </h2>
