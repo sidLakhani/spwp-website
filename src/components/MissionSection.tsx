@@ -7,7 +7,7 @@ const MissionSection = () => {
     <section className="bg-mission relative overflow-hidden">
       <ScrollReveal variant="fade-in">
         {/* Desktop: overlay text on image */}
-        <div className="relative hidden lg:block">
+        <div className="relative hidden xl:block">
           <img
             src={spwpExtended}
             alt="Sincerely, People With Periods illustration"
@@ -30,7 +30,7 @@ const MissionSection = () => {
         </div>
 
         {/* Mobile/Tablet: stack text below image */}
-        <div className="lg:hidden">
+        <div className="xl:hidden">
           <img
             src={spwpExtendedMobile}
             alt="Sincerely, People With Periods illustration"
