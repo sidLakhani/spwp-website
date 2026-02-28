@@ -16,10 +16,10 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   { name: "Aarushi Khanna", role: "Founder + President", image: aarushiKhanna },
-  { name: "Widad M. Khan", role: "Social Media Manager", image: widadKhan },
-  { name: "Naisha", role: "Event Coordinator", image: naisha },
   { name: "Team Member 4", role: "Role Title", image: "" },
   { name: "Team Member 5", role: "Role Title", image: "" },
+  { name: "Widad M. Khan", role: "Social Media Manager", image: widadKhan },
+  { name: "Naisha", role: "Event Coordinator", image: naisha },
   { name: "Team Member 6", role: "Role Title", image: "" },
 ];
 
