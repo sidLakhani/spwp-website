@@ -48,7 +48,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation - centered */}
-          <ul className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          <ul className="hidden lg:flex items-center gap-8 mx-auto">
             {navItems.map((item) => (
               <li key={item.label} className="relative group">
                 <button className="flex items-center gap-1 text-primary font-medium hover:text-primary/80 transition-colors py-2">
